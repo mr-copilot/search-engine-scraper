@@ -58,7 +58,14 @@ class SearchEngine
         $q = [
             'q' => strtolower($keyword),
             'start' => $this->startIndex,
-            'num' => $this->resultCount
+            'num' => $this->resultCount,
+            'gl' => 'us', // change as per requirement
+            'hl' => 'en',
+            'location' => 'New York, New York, United States', // change as per requirement
+            'google_domain' => 'google.com',
+            'time_period' => 'custom',
+            "device" => 'mobile',
+            'csv_fields' => "search.q,organic_results.position, organic_results.domain"
         ];
 
         return 'https://www.' . $this->engine . '/search?'.http_build_query($q) ;
