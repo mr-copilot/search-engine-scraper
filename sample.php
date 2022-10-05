@@ -5,6 +5,6 @@ require __DIR__ . '/vendor/autoload.php';
 
 $client = new SearchEngine();
 $client->setEngine('google.com');
-$result = $client->search(['hello']);
+$result = $client->search(['hypertext processor','payment free']); // ['hypertext processor','payment free']
 print_r($result);
 
