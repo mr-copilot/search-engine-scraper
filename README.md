@@ -12,7 +12,7 @@ cURL 7.70.0
 
 add below to composer.json and do composer update 
 
- `"require": { <br  />
+ `"require": { 
         "mr-copilot/search-engine-scraper": "v1.0" 
     }, 
     "repositories": [
